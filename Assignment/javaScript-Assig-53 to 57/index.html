@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-53 to 57</title>
+</head>
+<body>
+
+    <h1> <h1>Events</h1>
+    
+
+
+    <div class="galary" id="Hover" justify-content="space-between">
+        <img id="my-img" src="./image-1.jpg" width="20%" height="300px" onclick="openModel(this.src)">
+        <img id="my-img" src="./images-02.jpg" width="20%" height="300px" onclick="openModel(this.src)">
+        <img id="my-img" src="./image-03.jpg" width="20%" height="300px" onclick="openModel(this.src)">
+        <img id="my-img" src="./images-4.jpg" width="20%" height="300px" onclick="openModel(this.src)">
+    </div>
+    
+        
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()"> &times;</span> 
+        <img class="modal-content" id="img">
+        
+      </div>
+      
+
+      <button onclick="zoomin()">Zoom In</button>
+      <button onclick="zoomout()">Zoom Out</button>
+
+
+      
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
