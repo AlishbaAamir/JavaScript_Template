@@ -3,15 +3,16 @@
 // 1. Write a program that takes a character (number or string) in a variable & checks whether the given input is a 
 // number, uppercase letter or lower case letter. (Hint: ASCII codes:- A=65, Z=90, a=97, z=122)
 
-var char=prompt("Enter the Number or String")
+var a=prompt("Enter the Number or String")
+var char=a.charCodeAt(0)
 if(char>=65 && char<=90){
-alert("Upper Case")
+alert( char+ "Upper Case")
 }
-else if(char>="97" && char<="122"){
-    alert(" lower Case")
+else if(char>=97 && char<=122){
+    alert(char +" lower Case")
 }
-else if(char >= "48" && char <= "57"){
-    alert("Number")
+else if(char >= 48 && char <= 57){
+    alert( char+" Number")
 }
 else{
     alert("operators")
@@ -68,8 +69,6 @@ else if(pass!==userPass){
 else{
     alert("Incorrect Password")
 }
-
-
 
 // This if/else statement does not work. Try to fix it:
 // var greeting;

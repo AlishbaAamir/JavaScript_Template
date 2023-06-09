@@ -80,6 +80,23 @@ var arr = ["This" ,  "is ", " my" , " cat"]
  var b= arr.join(" ")
 document.write("<h3> Single Strings</h3>"+"<br>Array:<br>"+arr+"<br>String: <br>"+b)
 
+// 13. Create a new array. Store values one by one in such a waythat you can access the values in the order in which they 
+// were stored. (FIFO-First In First Out
+var queue = [];
+
+queue.push("keyboard");
+queue.push("mouse");
+queue.push("printer");
+queue.push("monitor")
+
+var keyboard  = queue.shift();
+var mouse=queue.shift()
+var printer=queue.shift()
+var monitor=queue.shift()
+
+console.log(keyboard,mouse,printer,monitor)
+
+
 // 15. Write a program to store phone manufacturers (Apple,Samsung, Motorola, Nokia, Sony & Haier) in an array. 
 //     Display the following dropdown/select menu in your browser using document.write() method:
     var phone=["Apple <br> "," Samsung <br> ", " Motorola <br> ", " Nokia<br> ", " Sony<br> " , " Haier<br> "]

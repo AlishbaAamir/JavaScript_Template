@@ -3,7 +3,7 @@
 // 1. Write a program to take “city” name as input from user. If user enters “Karachi”, welcome the user like this: 
 // “Welcome to city of lights”
  var city =prompt("Enter your city")
- if(city=="karachi"){
+ if(city.toLowerCase()==="karachi"){
     document.write("<br>Welcome to City Of Lights")
  }
  else{
@@ -13,10 +13,10 @@
 //  2. Write a program to take “gender” as input from user. If the user is male, give the message: Good Morning Sir. If the 
 // user is female, give the message: Good Morning Ma’am.
 var gender=prompt("Enter Your Gender\nMale \nFemale")
-if(gender=="Male" || "male"){
+if(gender.toLowerCase()=== "male"){
     document.write("<br>Good Morning Sir")
 }
-else if(gender=="Female"||"female" ){
+else if(gender.toLowerCase()==="female" ){
     document.write("<br>Good Morning Ma'am")
 }
 else{
@@ -25,13 +25,13 @@ else{
 
 // 3. Write a program to take input color of road traffic signal from the user & show the message according to this table:
 var trafficSignal=prompt("Red \n Yellow\n Green")
-if(trafficSignal=="Red"){
+if(trafficSignal.toLowerCase()==="Red"){
     document.write("<br>Must Stop")
 }
-else if(trafficSignal=="Yellow"){
+else if(trafficSignal.toLowerCase()==="Yellow"){
     document.write("<br>Ready To MOve")
 }
-else if(trafficSignal=="Green"){
+else if(trafficSignal.toLowerCase()==="Green"){
 document.write("<br>Move Now")
 }
 else{
@@ -133,10 +133,10 @@ else{
 // is divisible by 3.
 var check=+prompt("Enter The Number")
 if(check%3==0){
-    document.write("<br>Hello Everyone!");
+    document.write("<br>the number is divisible by 3.");
 }
 else{
-
+ document.write("<br>the number  is  not divisible by 3.")
 }
 
 // 9. Write a program that checks whether the given input is an even number or an odd number.
@@ -170,8 +170,33 @@ else if(T>10){
 else{
     alert("Snowfalling")
 }
+// 11. Write a program to create a calculator for +,-,*, / & % using if statements. Take the following input:
+// a. First number
+// b. Second number
+// c. Operation (+, -, *, /, %)
+// Compute & show the calculated result to user.
 
 
 
+var firstNumber = +prompt("Enter first number:");
+var secondNumber = +prompt("Enter second number:");
+var operation = prompt("Enter operation (+, -, *, /, %):");
+var result;
 
+if (operation === "+") {
+  result = firstNumber + secondNumber;
+} else if (operation === "-") {
+  result = firstNumber - secondNumber;
+} else if (operation === "*") {
+  result = firstNumber * secondNumber;
+} else if (operation === "/") {
+  result = firstNumber / secondNumber;
+} else if (operation === "%") {
+  result = firstNumber % secondNumber;
+} else {
+  alert("Invalid operation!");
+}
+
+document.write("<h3>calculator</h3>" +"First Number: "+firstNumber+"<br>Second Number: "+secondNumber+"<br>Operation: "+operation
++"<br>Result: "+result)
 

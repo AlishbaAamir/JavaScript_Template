@@ -75,11 +75,6 @@ console.log(result)
 // ASCII code of . is 46
 // ASCII code of @ is 64
 
-// 14. You have an array A = [cake”, “apple pie”, “cookie”, “chips”, “patties”]
-// Write a program to enable “search by user input” in an array. After searching, prompt the user whether the given 
-// item is found in the list or not.Note: Perform case insensitive search. Whether the user enters cookie, Cookie, COOKIE or coOkIE, program 
-// should inform about its availability. Example:
-var a=["apple ", " pie ", " cookie ", " chips ", " patties "]
 
 // 15. Write a program to take password as an input from user. The password must qualify these requirements:
 // a. It should contain alphabets and numbers

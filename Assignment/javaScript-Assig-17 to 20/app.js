@@ -1,11 +1,23 @@
 // -----------ARRAYS AND LOOP ---------------
 
-//  1. Declare and initialize an empty multidimensional array.(Array of arrays)
-    // var arr=[]+[];
+// // 1. Declare and initialize an empty multidimensional array.(Array of arrays)
+// Declare and initialize an empty multidimensional array
+var multidimensionalArray = [[]];
+// Declare and initialize a 2x3 multidimensional array
+var multidimensionalsArray = [[], [], []];
 
-    // 2. Declare and initialize a multidimensional array representing the following matrix:
-    // var multi [3][4]=  {8, 6, 4, 1, 9, 3, 1, 1};
+// 2. Declare and initialize a multidimensional array
+// representing the following matrix:
+// 0 1 2 3
+// 1 0 1 2
+// 2 1 0 1
 
+// Declare and initialize a multidimensional array representing the matrix
+var matrix = [
+  [0, 1, 2, 3],
+  [1, 0, 1, 2],
+  [2, 1, 0, 1],
+];
     // 3. Write a program to print numeric counting from 1 to 10.
 for(i=0;i<=10;i++){
     document.write(i+" <br> ")
@@ -67,20 +79,49 @@ for(m=1;m<=10;m++){
 
 // 7. You have an array A = [“cake”, “apple pie”, “cookie”, “chips”, “patties”] Write a program to enable “search by user input” in an array.
 // After searching, prompt the user whether the given item is found in the list or not. Example
-var items = ["cake", "apple", "pie", "cookie", "chips", "patties"]
-var want=prompt("Welcom! What do you want to order Sir/Ma'am")
-if(items[5]===want){
-    alert("Avalaible in our bakery")
-
-}
-else{
-    alert("not available")
-}
-
-
-
-
-
-
-
+// var items = ["cake", "apple", "pie", "cookie", "chips", "patties"]
+// var want=prompt("Welcom! What do you want to order Sir/Ma'am")
+// var search = false
+// for(i=0;i<items.length;i++){
+//     if(item[i]===want){
+//     search=true
+//     break;
+// }
+// }
+// if(search){
+//     alert(items+"is found in the list")
+// }
+// else{
+//     alert(items+"is not found in the list")
+// }
 // 8. Write a program to identify the largest number in the given array.A = [24, 53, 78, 91, 12]
+var large = [24, 53, 78, 91, 12];
+var largest = large[0];
+
+for (let i = 1; i < large.length; i++) {
+  if (large[i] > largest) {
+    largest = large[i];
+  }
+}
+document.write("<h3>Largest Number</h3>"+"The largest number in the array is: " + largest);
+
+// 9. Write a program to identify the smallest number in the given array.
+// A = [24, 53, 78, 91, 12]
+
+var small = [24, 53, 78, 91, 12];
+var smallest = small[0];
+
+for (let i = 1; i < small.length; i++) {
+  if (small[i] < smallest) {
+    smallest = small[i];
+  }
+}
+document.write("<h3>Smallest Number</h3>"+"The smallest number in the array is: " + smallest);
+
+// 10. Write a program to print multiples of 5 ranging 1 to 100
+document.write("<h3>Ranging</h3>")
+for(var i=1;i<=100;i++){
+    if(i%5==0){
+        document.write( i+ " ")
+    }
+}

@@ -13,18 +13,28 @@ function image(){
 // a record, entire row should be deleted. 
 
 
-function student(){
+function student(button){
     var btn=button.parentNode.parentNode
-    btn.parentNode.removeChild()
+    btn.parentNode.removeChild(btn)
 
 
 }
-// 4. Display an image in browser. Change the picture on mouseover and set the first picture on mouseout.
+// Display an image in browser. Change the picture on mouseover and set the first picture on mouseout.
 
 
 // 5. Show a counter in browser. Counter should increase on click on increase button and decrease on click
 //  on decrease button. And show updated counter value in browser.
-function increase(){
-    var counter=document.getElementById("inc")
-    
-}
+
+ function increase() {
+    var counter = document.getElementById("counter");
+    var value = parseInt(counter.innerHTML);
+    value++;
+    counter.innerHTML = value;
+  }
+  
+  function decrease() {
+    var counter = document.getElementById("counter");
+    var value = parseInt(counter.innerHTML);
+    value--;
+    counter.innerHTML = value;
+  }
